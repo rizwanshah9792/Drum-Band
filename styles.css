@@ -1,0 +1,134 @@
+/* ---------- BASE STYLES ---------- */
+body {
+  text-align: center;
+  background: linear-gradient(270deg, #1f1c2c, #928dab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: "Arvo", cursive;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  text-shadow: 3px 3px 8px #DA0463, 0 0 10px #fff;
+  margin-top: 30px;
+}
+
+/* ---------- DRUM BUTTON STYLES ---------- */
+.drum {
+  outline: none;
+  border: 6px solid #404B69;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  background: radial-gradient(circle, #ff416c, #ff4b2b);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Hover effect */
+.drum:hover {
+  transform: scale(1.05);
+  background: radial-gradient(circle, #ff4b2b, #ff416c);
+  box-shadow: 0 12px 20px rgba(255, 75, 43, 0.6);
+}
+
+/* Clicked (pressed) effect */
+.clicked {
+  transform: scale(1.05);
+  background: radial-gradient(circle, #ff4b2b, #ff416c);
+  box-shadow: 0 12px 20px rgba(255, 75, 43, 0.6);
+  filter: brightness(1.1);
+  color: #ffffff !important;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff6b81;
+  transition: all 0.1s ease;
+}
+
+/* Optional glowing border */
+.drum:focus {
+  box-shadow: 0 0 15px #DA0463;
+}
+
+/* ---------- BUTTON-SPECIFIC BACKGROUNDS ---------- */
+.w {
+  background-image: url("images/w.png");
+  background-size: cover;
+  background-position: center;
+}
+.a {
+  background-image: url("images/a.png");
+  background-size: cover;
+  background-position: center;
+}
+.s {
+  background-image: url("images/s.png");
+  background-size: cover;
+  background-position: center;
+}
+.d {
+  background-image: url("images/d.png");
+  background-size: cover;
+  background-position: center;
+}
+.j {
+  background-image: url("images/j.png");
+  background-size: cover;
+  background-position: center;
+}
+.k {
+  background-image: url("images/k.png");
+  background-size: cover;
+  background-position: center;
+}
+.l {
+  background-image: url("images/l.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------- OTHER STYLES ---------- */
+.set {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #DBEDF3;
+  font-family: 'Arvo', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  text-shadow: 1px 1px 2px #000, 0 0 5px #DA0463;
+}
