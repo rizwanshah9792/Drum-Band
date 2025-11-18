@@ -4,7 +4,7 @@ Welcome to the **Drum Band Kit** project – a fun and interactive virtual drum 
 
 ## 🚀 Live Preview
 
-*You can deploy this project using GitHub Pages or any static hosting service for an instant live demo.*
+
 
 ## 🎯 Features
 
